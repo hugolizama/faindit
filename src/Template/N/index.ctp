@@ -874,4 +874,4 @@
 <script src='https://www.google.com/recaptcha/api.js?onload=generarCaptcha&render=explicit' defer async></script>
 <?php endif; ?>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFrVItEITGc-IjDjSazYhDuOIvMX0xfI4&signed_in=true&callback=initialize" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= $google_map_api_key ?>&signed_in=true&callback=initialize" async defer></script>

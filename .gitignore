@@ -67,3 +67,4 @@ config/*.server
 
 
 /webroot/img/neg/
+/config/app.php

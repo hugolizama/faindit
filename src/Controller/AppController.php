@@ -39,6 +39,7 @@ class AppController extends Controller
     public $cookieUsuario = null; //var para datos del usuario
     public $cookieUsuarioAdmin = null; //var para datos del usuario
     public $js_buscador = null; //bandera para cargar js de autocompletado del buscador
+    public $google_map_api_key;
 
 
     public $permisos_array = array(
@@ -431,5 +432,8 @@ class AppController extends Controller
           
           $this->set(compact('urlQue', 'urlEn'));
         }
+        
+        $this->google_map_api_key = getEnv('google_map_api_key');
+        $this->set('google_map_api_key', $this->google_map_api_key);        
       }
 }

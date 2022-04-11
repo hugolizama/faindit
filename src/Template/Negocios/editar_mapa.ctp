@@ -368,4 +368,4 @@ $('#marcador_eliminar').click(function(){
 });
 /**************************FIN MAPA ****************************/  
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFrVItEITGc-IjDjSazYhDuOIvMX0xfI4&libraries=places&signed_in=true&callback=initAutocomplete" async defer></script>   
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= $google_map_api_key ?>&libraries=places&signed_in=true&callback=initAutocomplete" async defer></script>   
