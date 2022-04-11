@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-21-2015, 06:19:21 PM
+    Author     : hug0
+*/
+
+#button-toggle{    
+  color: #333;
+  background-color: #CECECE;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#button-toggle.menu-show{    
+  background-color: #333;
+  color: #CECECE;
+}
+
+#buscar-container{
+  position: relative;
+}
+
+
+#buscar-contenido, #buscar-sidebar {
+  /*border: 1px solid;*/
+  
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#buscar-sidebar {  
+  border: 0;
+  /*background-color: #DEF;*/
+  /*border-color: #BCD;  */
+  width: 260px;
+  margin-right: 10px;
+  display: inline-block; 
+  vertical-align: top;
+  margin-left: -274px;
+  opacity: 0;
+  /*padding: 10px;*/
+}
+
+
+#buscar-contenido {
+  /*background-color: #EFE;
+  border-color: #CDC;*/
+  width: 99.55%;
+  display: inline-block;
+}
+
+.sidebar-activo #buscar-sidebar{
+  margin-left: 0px;
+  opacity: 1; 
+}
+
+.sidebar-activo #buscar-contenido{
+  width: 70.6%;
+}
+
+#menu-items{  
+  list-style: none;
+  /*margin: 10px 0px 10px -20px;*/
+}
+
+
+@media screen and (min-width: 1200px){
+  #buscar-contenido {   
+    width: 99.95%;
+  }
+  
+  .sidebar-activo #buscar-contenido{
+    width: 75.7%;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  #buscar-sidebar{
+    margin-left: 0px;
+    opacity: 1;
+  }
+
+  #buscar-contenido{
+    margin-right: -274px;
+  }
+
+  .sidebar-activo #buscar-sidebar{
+    margin-left: -274px;
+    opacity: 0;
+  }
+
+  .sidebar-activo #buscar-contenido{
+    width: 99.94%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

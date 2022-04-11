@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09-08-2015, 10:32:29 AM
+    Author     : hugo lizama
+*/
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/gfonts/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/gfonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+body{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+  background-color: #EFEFEF;
+}
+
+h1{
+  font-family: 'Lato';
+  font-weight: 900;
+}
+
+.img-responsive{
+  display: inline;
+}
+
+@media screen and (min-width: 768px){
+  #error-header{
+    margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #error-header{
+    margin-top: 5%;
+  }
+}

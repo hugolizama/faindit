@@ -1,0 +1,766 @@
+/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  background-color: #f8f8f8;
+  font-size: 13px;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#page-wrapper {
+  padding: 0;
+  min-height: 568px;
+  background-color: #fff;
+  position: relative;
+}
+
+/*@media(min-width:768px) {*/
+@media(min-width:992px) {
+  #page-wrapper {
+    /*position: inherit;*/
+    margin: 0 0 0 250px;
+    /*padding: 0 30px;*/
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+/*navegacion superior derecha*/
+.navbar-top-links li {
+  display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+  margin-right: 15px;
+}
+
+.navbar-top-links li a {
+  padding: 15px;
+  min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+  display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+  margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+  padding: 3px 20px;
+  min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+  white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+  width: 310px;
+  min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+  margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+  margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+  margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+  right: 0;
+  left: auto;
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+/*navegacion superior derecha*/
+
+
+/*enlaces principales*/
+.navbar-top-menu li{
+  display: inline-block;
+}
+
+.nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*notificacion desplegables de menu superiores*/
+@media screen and (max-width: 991px){
+  #menu-collapse{
+    text-align: center;
+  }
+  
+  #menu-collapse .nav > li{
+    position: inherit;
+  }
+
+
+  /*#menu-collapse.navbar-collapse.in{
+    overflow-y: visible;
+  }*/
+
+  #menu-collapse .dropdown-menu{
+    top: 100px;
+    margin-left: 0px;
+    width: auto;
+    right: 5px;
+    left: 5px;
+  }   
+}
+/*fin notificacion desplegables de menu superiores*/
+
+/*collapse menu de navegacion de moviles*/
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+}
+/* fin colapse menu de navegacion de moviles*/
+
+
+
+/*admin sidebar*/
+.sidebar .sidebar-search {
+  padding: 10px;
+}
+
+.sidebar ul li.active > a{
+  background-color: #337AB7;
+  font-weight: bolder;  
+  color: white;
+}
+
+.sidebar ul li.menu-title{
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #777 !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+/*@media(min-width:768px) {*/
+@media(min-width:992px) {
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 5px;
+  }
+
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto;
+  }
+}
+/*fin admin sidebar*/
+
+
+/*menu para moviles*/
+#menu-xs .dropdown-menu{
+  top: 50px;
+  /*width: 100%;*/
+  width: auto;
+  right: 5px;
+  left: 5px;
+}
+
+#menu-xs .dropdown-menu > li > a{
+  white-space: normal;
+}
+/*fin menu para moviles*/
+
+
+/*header de cada pagina*/
+h3{
+  display: inline-block;
+}
+
+.btn-header{
+  margin-bottom: 5px;
+}
+/*fin header de cada pagina*/
+
+/*propidades para selectall*/
+.table > thead > tr > th:first-child{
+  padding-left: 0px;
+}
+
+.table > thead > tr > th:first-child > input[type='checkbox']{
+  margin-left: 8px !important;
+}
+
+@media screen and (max-width: 1023px){
+  table .fa-accion{
+    margin-top: 2px;
+    font-size: 2.4em;
+  }
+  
+  .selectall, #selectall, 
+  .selectPermisos, .select_publicacion, .select_configs, .select_neg_suc, 
+  .select_usua_roles, .select_mantenimiento, .check_eliminar_logo{
+    -moz-transform: scale(1.8); 
+    -webkit-transform: scale(1.8); 
+    -ms-transform: scale(1.8); 
+    -o-transform: scale(1.8); 
+  }
+  
+  .selectall{
+    margin-top: 7px !important;
+  }
+}
+/*propidades para selectall*/
+
+
+
+@media screen and (max-width: 767px){
+  form .form-control{
+    margin-bottom: 5px;
+  } 
+  
+  form .btn{
+    margin-bottom: 10px;
+  }
+}
+
+
+/*estadisticas de pagina general*/
+#general_estadisticas tbody th{
+  background-color: #DCEBFE;
+}
+
+
+.radio-modo{
+  margin-right: 10px;
+}
+
+.ui-datepicker-month, 
+.ui-datepicker-year {
+  color: black;
+}
+/*fin estadisticas de pagina general*/
+
+
+/*generales*/
+.row{
+  margin-bottom: 5px;
+}
+
+.btn-margin-right{
+  margin-right: 10px;
+}
+
+.margin-right-5x{
+  margin-right: 5px;
+}
+
+.required:after{
+  content: ' *';
+  color: #C3232D;
+}
+
+label.label-light{
+  font-weight: normal;
+}
+
+.form-group-sm .form-control{
+  padding: 5px 5px;
+}
+
+.btn-group-sm > .btn, .btn-sm{
+  padding: 5px 5px;
+}
+
+.form-horizontal .control-label-left {
+  padding-top: 7px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.form-horizontal .form-group-sm .control-label-left {
+  padding-top: 6px;
+}
+
+.form-horizontal .form-group-sm .control-label-desc{
+  padding-top: 1px;
+}
+
+.label-descripcion{
+  font-size: 11px; 
+  font-weight: normal;
+  line-height: 11px;
+}
+
+@media(max-width:991px) {
+  .label-descripcion{
+    margin-bottom: 5px;
+  }
+}
+
+.form-group{
+  margin-bottom: 5px;
+}
+
+.form-group-hr{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+/*modificar radio buttons para opciones si y no*/
+.radio-label-Si, .radio-label-No{
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-right: 10px;  
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: white;
+}
+
+.radio-label-Si input[type='radio'], .radio-label-No input[type='radio']{
+  margin-right: 10px;
+}
+
+.radio-label-Si{  
+  background-color: #449D44;
+  border: 1px solid #255625;  
+}
+
+.radio-label-No{  
+  background-color: #D9534F;
+  border: 1px solid #D43F3A;  
+}
+/*fin modificar radio buttons para opciones si y no*/
+
+/*fin generales*/
+
+.alert{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.alert-absolute{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+form .input.error{
+  padding: 5px;
+  background-color: #C3232D;
+  border-radius: 4px;
+}
+
+form .error-message {
+  display: block;
+  padding: 0.375rem 0.5625rem 0rem;
+  margin-top: -1px;
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+}
+
+form .error-message ul{
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+
+/************JQUERY UI***********/
+
+#tabs .ui-tabs-panel{
+  /*background: transparent !important;*/
+  padding: 0px !important;
+}
+
+input[type='checkbox']{
+  cursor: pointer;
+}
+
+#tabs label{
+  font-weight: normal;
+  margin-bottom: 0px;
+  display: block;
+  cursor: pointer;
+}
+
+.ui-widget-overlay.ui-front{
+  z-index: 1001;
+  background: #666 repeat-x scroll 50% top;
+}
+
+.ui-widget-content{
+  background: white repeat-x scroll 50% top !important;
+}
+
+/*********FIN JQUERY UI***********/
+
+.ver-permisos table{
+  width: auto;
+}
+
+.permiso-0{
+  background-color: #D9534F;
+}
+
+.permiso-1{
+  background-color: #449D44;
+}
+
+/*paginacion*/
+nav.pagination-top{
+  display: inline-block;
+  vertical-align: top;
+  float: right;  
+}
+
+@media (min-width: 768px) and (max-width: 897px){
+  nav.pagination-usuarios{
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1148px){
+  nav.pagination-usuarios{
+    margin-top: 10px;
+  }
+}
+
+nav.pagination-top ul.pagination{
+  margin: 0px;
+}
+
+
+.form-group-sm .pagination > li > a {  
+  padding: 4.5px 10px;  
+}
+
+.form-group-sm .pagination > li > span {  
+  padding: 0.5px 10px;  
+  height: 29.5667px;
+}
+
+.form-group-sm .pagination > li > span > input{
+  text-align: center;
+  width: 30px;
+  padding: 0px;
+  margin-top: 3px;
+}
+
+.pagination > li > span {  
+  padding: 1px 10px;    
+}
+
+.pagination > li > span > input{
+  text-align: center;
+  width: 30px;
+}
+
+.pagination-bottom .pagination{
+  margin: 0px;
+}
+/*fin paginacion*/
+
+
+.usuario-rol-id, .accion-select{
+  width: 100px !important;
+}
+
+@media screen and (max-width: 767px){
+  .usuario-rol-id, .accion-select{
+    width: 100% !important;
+  }
+}
+
+.input-group-addon{
+  padding: 0px 12px;
+}
+
+.popover-reg-usuarios{
+  font-size: 12px;
+  width: 240px;
+}
+
+@media screen and (max-width: 767px){
+  .popover-reg-usuarios{
+    width: auto;
+  }
+}
+
+input[type='checkbox'], input[type='radio']{
+  margin: 2px 0px;
+  vertical-align: top;
+}
+
+
+@media screen and (min-width: 768px){
+  #txtValor{
+    width: 400px;
+  }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.form-inline .form-control-block{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.span-link, .div-link{
+  color: #337AB7;
+}
+
+/*sort*/
+th a.asc:after {
+	content: ' ⇣';
+}
+th a.desc:after {
+	content: ' ⇡';
+}
+/*fin sort*/
+
+
+
+/*administracion de negocios*/
+.check_eliminar_logo{
+  vertical-align: middle !important;
+}
+
+.control-label-indicacion{
+  text-align: right;
+}
+
+#agregar_telefono{
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 1023px){ 
+  .check_eliminar_logo{
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+  }
+  
+  .indicacion-icono, #agregar_telefono{
+    font-size: 24px !important;
+    vertical-align: middle;    
+  }
+  
+  .indicacion-icono{
+    margin-top: -5px;
+  }
+  
+  .control-label-indicacion{
+    text-align: left;
+  }
+}
+
+/*fin de administracion de negocios*/
+
+
+/*editar imagenes de negocio*/
+#sortable { 
+  list-style-type: none; 
+  margin: 0; padding: 0;
+}
+
+#sortable li { 
+  margin: 5px 5px 5px 0; 
+  padding: 5px; 
+  float: left; 
+  width: 24.4%;
+  height: 200px; 
+  font-size: 4em; 
+  text-align: center; 
+  cursor: move; 
+  vertical-align: middle;
+  position: relative;
+}
+
+#sortable li .img-order {
+  font-size: 12px;
+  width: 50px; 
+  float: left; 
+  display: none;
+  left: 0px;
+  position: absolute;
+}
+
+#sortable li .chk-img{
+  display: none;
+  float: right;
+  right: 0px;
+  position: absolute;
+}
+
+.sortable-img{
+  max-width: 100%; 
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px){
+  #sortable li { 
+    width: 32%;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  #sortable li { 
+    width: 48.3%;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  #sortable li { 
+    width: 48%;
+  }
+}
+
+#menu-eliminar-img{
+  /*border: 1px solid green;*/
+  transition: all .5s;
+  font-size: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu-eliminar-img.fixed{
+  position: fixed;
+  top: 0px;  
+  z-index: 100;
+  width: inherit;
+  background-color: #DDD;
+  transition: all .5s;
+  /*height: 40px;
+  padding-top: 5px;*/
+}
+
+@media screen and (max-width: 360px){
+  #menu-eliminar-img .btn-sm{
+    font-size: 11.2px !important;
+  }
+}
+
+@media screen and (max-width: 320px){
+  #label-selectall{
+    margin-bottom: 5px;
+  }
+  
+  #menu-eliminar-img.fixed{
+    height: 75px;
+  }
+}
+
+/*fin editar imagenes de negocio*/
+
+
+/*menu de editar sucursales*/
+
+.width-auto{
+  width: auto;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px){
+  .margin-bottom-5x-xs{
+    margin-bottom: 5px;
+  }
+}
+
+.separador-vertical{
+  border-right: 1px solid #222;
+  width: 1px;
+  height: 38.2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*fin menu editar sucursales*/
+
+.reg-deshabilitado{
+  text-decoration: line-through;
+}
+
+/*jquery upload*/
+.ajax-file-upload-error{
+  color: red;
+}
+/*fin jquery upload*/
+
+/*fin hugo lizama*/
+
+
+#graficaBusquedas, #graficaRegistros {
+	width		: 100%;
+	height		: 400px;
+	font-size	: 11px;  
+}	
+
+#promedioBusquedas, #promedioRegistros {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.logo-negocio{
+  max-height: 120px;
+}

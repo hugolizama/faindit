@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-21-2015, 06:19:21 PM
+    Author     : hug0
+*/
+
+#button-toggle{    
+  color: #333;
+  background-color: #CECECE;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#button-toggle.menu-show{    
+  background-color: #333;
+  color: #CECECE;
+}
+
+#main{
+  position: relative;
+  overflow-x: hidden;  
+}
+
+#content, #sidebar {
+  border: 1px solid;
+  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar {
+  top: 0px;
+  z-index: 1000;
+  position: absolute;
+  background-color: #DEF;
+  border-color: #BCD;
+  overflow-y: auto;
+  margin-left: -1000px;
+  /*width: 0px;*/
+  visibility: hidden;
+}
+
+
+#content {
+  background-color: #EFE;
+  border-color: #CDC;
+  width: auto;
+}
+
+.use-sidebar #content {
+  position: relative;
+  margin-left: 310px;
+}
+
+.use-sidebar #sidebar {  
+  visibility: visible;
+  width: 300px;
+  margin-left: 0px;  
+}
+
+.use-sidebar.sidebar-at-left #content, 
+.use-sidebar.sidebar-at-right #sidebar {
+  /*float: right; */
+ 
+}
+.use-sidebar.sidebar-at-right #content, 
+.use-sidebar.sidebar-at-left #sidebar {
+  /*float: left; */
+  
+}
+
+@media screen and (max-width: 1023px){
+  
+  .use-sidebar #sidebar {
+    top: 0px;
+    z-index: 1000;
+    position: absolute;
+    background-color: #DEF;
+    border-color: #BCD;
+    overflow-y: auto;
+    margin-left: -1000px;
+    width: 300px;
+    visibility: hidden;
+  }
+  
+  .use-sidebar #content {
+    background-color: #EFE;
+    border-color: #CDC;
+    width: auto;
+    margin-left: 0px;
+  }
+  
+  #sidebar {  
+    position: absolute;
+    width: 300px;
+    margin-left: 0px;
+    visibility: visible;
+  }
+  
+  #content {
+    position: relative;    
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .use-sidebar #sidebar {
+    top: 0px;
+    z-index: 1000;
+    position: absolute;
+    background-color: #DEF;
+    border-color: #BCD;
+    overflow-y: scroll;
+    margin-left: -1000px;
+    width: 283px;
+  }
+  
+  .use-sidebar #content {
+    background-color: #EFE;
+    border-color: #CDC;
+    width: 100%;
+  }
+  
+  #sidebar {  
+    max-height: 100%;
+    position: absolute;
+    width: 260px;    
+    margin-left: 0px;
+    overflow-y: auto;
+  }
+  
+  #content {
+    width: 100%; 
+    position: relative;    
+  }
+}
+
+
+/*prueba para menu desplegable con bootstrap y jquery*/
+
+@media screen and (max-width: 1023px){
+  #menu-body{
+    display: none;
+  }
+}
